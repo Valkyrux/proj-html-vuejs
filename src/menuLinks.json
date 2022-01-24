@@ -1,0 +1,37 @@
+[
+    {
+        "name": "courses",
+        "href": "#",
+        "new": false
+    },
+    {
+        "name": "zoom",
+        "href": "#",
+        "new": true
+    },
+    {
+        "name": "pages",
+        "href": "#",
+        "new": false
+    },
+    {
+        "name": "bundles",
+        "href": "#",
+        "new": false
+    },
+    {
+        "name": "course formats",
+        "href": "#",
+        "new": false
+    },
+    {
+        "name": "add course",
+        "href": "#",
+        "new": true
+    },
+    {
+        "name": "demos",
+        "href": "#",
+        "new": false
+    }
+]
