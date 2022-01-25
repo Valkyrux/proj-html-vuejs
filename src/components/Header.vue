@@ -155,7 +155,7 @@ export default {
       margin-left: 10px;
       width: 72%;
       padding: 10px;
-      background-color: $athens-gray;
+      background-color: rgba($color: $athens-gray, $alpha: 0.7);
       border: 0;
     }
   }
