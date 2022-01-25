@@ -1,16 +1,19 @@
 <template>
     <main>
         <Highlights :categoryList="categoryListFinder"/>
+        <Jumbo />
     </main>
 </template>
 
 <script>
 import Highlights from './main_components/Highlights.vue';
+import Jumbo from './main_components/Jumbo.vue';
 
 export default {
   name: 'Main',
   components: {
     Highlights,
+    Jumbo,
   },
   data() {
     return {

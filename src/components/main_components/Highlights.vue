@@ -170,11 +170,19 @@ h1.ms_main-title {
     & .ms_quantity {
         color: gray;
     }
-}
-
-.ms_grid-item:first-child {
+    &:first-child {
     grid-column: 1 / 3;
     grid-row: 1 / 3;
+    }
+    &:nth-child(4) {
+    grid-column: 3 / 3;
+    grid-row: 3 / 3;
+    }
+    &:nth-child(6) {
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+}
+
 }
 
 .ms_slider-description {
