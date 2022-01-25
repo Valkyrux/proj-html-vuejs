@@ -55,8 +55,9 @@
           </div>
           <div class="ms_input-container">
             <a href="#"><font-awesome-icon :icon="[ 'fas', 'bars' ]" /> Category</a>
-            <input type="text" placeholder="Search courses">
-            <button><font-awesome-icon :icon="[ 'fas', 'search' ]" /></button>
+            <input type="text" placeholder="Search courses" v-model="inputSearch"
+            @keydown.enter="executeInput">
+            <button @click="executeInput"><font-awesome-icon :icon="[ 'fas', 'search' ]" /></button>
           </div>
           <ul class="nav">
             <li class="me-5">
@@ -89,8 +90,14 @@ export default {
   name: 'Header',
   data() {
     return {
+      inputSearch: '',
       menuVoices: null,
     };
+  },
+  methods: {
+    executeInput() {
+      console.log(this.inputSearch);
+    },
   },
   created() {
     // eslint-disable-next-line global-require
