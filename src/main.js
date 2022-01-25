@@ -5,10 +5,10 @@ import {
   faTwitter, faInstagram, faBehance, faDribbble, faFlickr, faGit, faLinkedin, faPinterest,
 } from '@fortawesome/free-brands-svg-icons';
 import {
-  faChevronDown, faBars, faSearch, faBullhorn, faBriefcase,
+  faChevronDown, faBars, faSearch, faBullhorn, faBriefcase, faGlobeEurope, faDesktop,
 } from '@fortawesome/free-solid-svg-icons';
 import {
-  faUser, faBookmark,
+  faUser, faBookmark, faCalendarCheck,
 } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
@@ -16,7 +16,8 @@ import App from './App.vue';
 
 library.add(faTwitter, faInstagram, faBehance, faDribbble,
   faFlickr, faGit, faLinkedin, faPinterest, faChevronDown,
-  faBars, faSearch, faBullhorn, faBriefcase, faUser, faBookmark);
+  faBars, faSearch, faBullhorn, faBriefcase, faUser, faBookmark,
+  faGlobeEurope, faDesktop, faCalendarCheck);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 

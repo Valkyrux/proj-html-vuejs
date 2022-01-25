@@ -73,7 +73,7 @@
               <a href="#"><font-awesome-icon :icon="[ 'far', 'user' ]" /> Log In</a>
             </li>
             <li class="nav-item p-2 d-flex align-items-center">
-              <button class="rounded-pill text-uppercase ms-2 me-2 ps-4 pe-4 ms_fw">Sign up</button>
+              <button class="rounded-pill text-uppercase ms-2 me-2 ms_big-button">Sign up</button>
             </li>
             <li class="nav-item p-2 d-flex align-items-center fs-4">
               <a href="#"><font-awesome-icon :icon="[ 'far', 'bookmark' ]" /></a>
@@ -141,6 +141,7 @@ export default {
     background-color: $denim;
     border: 0;
     padding: 10px 17px;
+    font-weight: 500;
     color: white;
   }
   & .ms_input-container {
@@ -160,7 +161,8 @@ export default {
   }
 }
 
-.ms_fw {
-  font-weight: 500;
+button.ms_big-button {
+  padding: 11px 30px;
+  font-size: 0.9em;
 }
 </style>
