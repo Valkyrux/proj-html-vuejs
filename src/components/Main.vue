@@ -1,9 +1,6 @@
 <template>
     <main>
-        <Highlights />
-        <div v-for="element, index in categoryList" :key="index">
-            {{element}}
-        </div>
+        <Highlights :categoryList="categoryListFinder"/>
     </main>
 </template>
 
@@ -25,14 +22,25 @@ export default {
     this.coursesList = require('../assets/courses.json');
   },
   computed: {
-    categoryList() {
-      const theCategoryList = [];
+    categoryListFinder() {
+      const categoryList = [];
+      const categoryNumberedList = [];
       this.coursesList.forEach((element) => {
-        if (!theCategoryList.includes(element.category)) {
-          theCategoryList.push(element.category);
+        if (!categoryList.includes(element.category)) {
+          categoryList.push(element.category);
+          categoryNumberedList.push({ category: element.category, quantity: 1 });
+        } else {
+          let indexFound;
+          categoryList.forEach((category, index) => {
+            if (category === element.category) {
+              indexFound = index;
+            }
+          });
+          categoryNumberedList[indexFound].quantity += 1;
         }
       });
-      return theCategoryList;
+      console.log(categoryNumberedList);
+      return categoryNumberedList;
     },
   },
 };

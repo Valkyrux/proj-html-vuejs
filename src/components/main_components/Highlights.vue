@@ -58,8 +58,19 @@
             </div>
         </div>
       </div>
-      <div class="row">
-
+      <div class="ms_grid" @mouseover="clearAutoPlaySlider()" @mouseleave="setAutoPlaySlider()">
+          <div class="ms_grid-item" v-for="element, index in categoryShow"
+          :key="'category' + index">
+              <div class="ms_slider-img">
+                <img
+                :src="require(`../../assets/img/cat_${initials(element.category)}-740x310.jpg`)"
+                class="h-100 w-100" alt="">
+              </div>
+              <div class="ms_slider-description">
+                <span>{{element.category}}</span>
+                <span class="float-end ms_quantity">{{element.quantity}} Courses</span>
+              </div>
+          </div>
       </div>
   </div>
 </template>
@@ -67,6 +78,36 @@
 <script>
 export default {
   name: 'Highlights',
+  data() {
+    return {
+      autoPlay: null,
+      categoryShow: null,
+    };
+  },
+  props: {
+    categoryList: Array,
+  },
+  methods: {
+    setAutoPlaySlider() {
+      this.autoPlay = setInterval(() => {
+        const firstVariable = this.categoryShow[0];
+        this.categoryShow.splice(this.categoryShow[0], 1);
+        this.categoryShow.push(firstVariable);
+      }, 5000);
+      // forzo l'update di vue
+      this.$forceUpdate();
+    },
+    clearAutoPlaySlider() {
+      clearInterval(this.autoPlay);
+    },
+    initials(string) {
+      return string.toLowerCase().split('')[0] + string.toLowerCase().split('')[1];
+    },
+  },
+  created() {
+    this.categoryShow = this.categoryList;
+    this.setAutoPlaySlider();
+  },
 };
 </script>
 
@@ -110,6 +151,34 @@ h1.ms_main-title {
         color: $gull-gray;
         font-size: 0.95em;
     }
+}
+// ms_grid
+.ms_grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: calc(100% / 3 - 12px) calc(100% / 3 - 24px) calc(100% / 3 - 12px);
+    grid-template-rows: 200px 200px 200px;
+    margin: 80px -12px;
+}
+
+.ms_grid-item {
+    cursor: pointer;
+    overflow: hidden;
+    & .ms_slider-img {
+        height: calc(100% - 35px);
+    }
+    & .ms_quantity {
+        color: gray;
+    }
+}
+
+.ms_grid-item:first-child {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.ms_slider-description {
+    margin-top: 10px;
 }
 
 </style>
