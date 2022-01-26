@@ -7,6 +7,7 @@
         <Subscribe />
         <PopularCourses :allCourses="coursesList" />
         <WorkWithUs />
+        <Testimonial />
     </main>
 </template>
 
@@ -18,6 +19,7 @@ import WeAreProud from './main_components/WeAreProud.vue';
 import Subscribe from './main_components/Subscribe.vue';
 import PopularCourses from './main_components/PopularCourses.vue';
 import WorkWithUs from './main_components/WorkWithUs.vue';
+import Testimonial from './main_components/Testimonial.vue';
 
 export default {
   name: 'Main',
@@ -29,6 +31,7 @@ export default {
     Subscribe,
     PopularCourses,
     WorkWithUs,
+    Testimonial,
   },
   data() {
     return {

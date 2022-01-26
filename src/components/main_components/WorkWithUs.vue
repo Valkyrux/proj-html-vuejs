@@ -34,11 +34,6 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid ms_photo">
-            <div class="row ms_row-secondary">
-
-            </div>
-        </div>
     </div>
 </template>
 
@@ -71,5 +66,4 @@ p {
 .ms_border {
     border: 1px solid $athens-gray;
 }
-
 </style>
