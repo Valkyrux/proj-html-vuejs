@@ -5,13 +5,18 @@
         <div  v-if="courseObj">
             <div class="p-3 ms_card-content">
                 <small>{{courseObj.category}} &gt;</small>
-                <h2>{{courseObj.name}}</h2>
+                <h2 class="mt-2 mb-3">{{courseObj.name}}</h2>
                     <div class="ms_card-footer">
                         <div>
                             <span v-if="courseObj.time">
                                 <font-awesome-icon :icon="[ 'far', 'clock' ]" />
                                 {{courseObj.time}}</span>
-                            <span v-else>{{courseObj.user_vote}}</span>
+                            <span v-else>
+                                <span v-for="vote in 5" :key="courseObj.name + vote">
+                                    <font-awesome-icon :icon="[ 'fas', 'star' ]"
+                                    :class="vote <= courseObj.user_vote ?
+                                    'ms_star-yellow':'ms_star-gray'"/></span>
+                            </span>
                         </div>
                         <div>
                             <div v-if="courseObj.discount">
@@ -67,6 +72,12 @@ export default {
         border-top: 1px solid $athens-gray;
         position: absolute;
         bottom: 10px;
+        & .ms_star-yellow {
+            color: goldenrod;
+        }
+        & .ms_star-gray {
+            color: $gull-gray;
+        }
         & .ms_old-price {
             font-size: 0.8em;
             color: $gull-gray;
