@@ -3,7 +3,7 @@
         <h2 class="ms_section-title text-center">Popular courses</h2>
         <p class="text-center">Discover our most popular courses for self learning</p>
         <div class="slider">
-        <div class="row ms_row-secondary">
+        <div class="row p-4">
             <div v-for="element,index in sixPopularCourses" :key="'popular-' + index" class="col-2">
                 <Card :courseObj="element"/>
             </div>
@@ -80,9 +80,13 @@ export default {
     & button {
         padding: 12px 20px;
         margin-right: 2px;
-        border: 0;
+        border: 1px solid $gull-gray;
         background-color: $white;
         color: $gull-gray;
+        &:not(.ms_disable):hover {
+          background-color: $gull-gray;
+          color: $white;
+        }
         &.ms_disable {
             color: rgba($color: $gull-gray, $alpha: 0.2);
         }

@@ -3,6 +3,7 @@ import Vue from 'vue';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faTwitter, faInstagram, faBehance, faDribbble, faFlickr, faGit, faLinkedin, faPinterest,
+  faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faChevronDown, faBars, faSearch, faBullhorn, faBriefcase, faGlobeEurope, faDesktop, faStar,
@@ -19,7 +20,7 @@ library.add(faTwitter, faInstagram, faBehance, faDribbble,
   faFlickr, faGit, faLinkedin, faPinterest, faChevronDown,
   faBars, faSearch, faBullhorn, faBriefcase, faUser, faBookmark,
   faGlobeEurope, faDesktop, faCalendarCheck, faClock, faStar, faChevronLeft,
-  faChevronRight);
+  faChevronRight, faFacebook);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
