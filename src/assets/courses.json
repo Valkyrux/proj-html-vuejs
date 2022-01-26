@@ -8,7 +8,7 @@
         "discount": null,
         "time": "6 hours",
         "label": null,
-        "img-name": "photo-1461749280684-dccba630e2f6-"
+        "imgName": "photo-1461749280684-dccba630e2f6-272x161.jpeg"
     },
     {
         "name": "Real Things Art Painting by Jason Ni",
@@ -19,7 +19,7 @@
         "discount": "$45",
         "time": "6 hours",
         "label": "new",
-        "img-name": "cat_ar-"
+        "imgName": "cat_ar-272x161.jpg"
     },
     {
         "name": "Basics of Masterstudy",
@@ -30,7 +30,7 @@
         "discount": null,
         "time": null,
         "label": "hot",
-        "img-name": "course-preview-"
+        "imgName": "course-preview-272x161.jpg"
     },
     {
         "name": "Hot to be a DJ? Make Electrionc Music",
@@ -41,7 +41,7 @@
         "discount": "$49",
         "time": null,
         "label": "special",
-        "img-name": "photo-1496307042754-b4aa456c4a2d-"
+        "imgName": "photo-1496307042754-b4aa456c4a2d-272x161.jpeg"
     },
     {
         "name": "Design instruments for Communication",
@@ -52,7 +52,7 @@
         "discount": null,
         "time": null,
         "label": null,
-        "img-name": "photo-1416339134316-0e91dc9ded92-scaled-"
+        "imgName": "photo-1416339134316-0e91dc9ded92-scaled-272x161.jpeg"
     },
     {
         "name": "Make your Concept Right and Beautiful",
@@ -63,7 +63,7 @@
         "discount": null,
         "time": "6 hours",
         "label": null,
-        "img-name": "cathryn-lavery-67852-unsplash-"
+        "imgName": "cathryn-lavery-67852-unsplash-272x161.jpg"
     },
     {
         "name": "Road Bike Manual or How to Be a Champion",
@@ -74,7 +74,7 @@
         "discount": null,
         "time": "6 hours",
         "label": null,
-        "img-name": "photo-1475452779376-caebfb988090-"
+        "imgName": "photo-1475452779376-caebfb988090-272x161.jpeg"
     },
     {
         "name": "How to Make Beautiful Landscape photo?",
@@ -85,7 +85,7 @@
         "discount": null,
         "time": "6 hours",
         "label": null,
-        "img-name": "cristian-grecu-762012-unsplash-min-scaled-"
+        "imgName": "cristian-grecu-762012-unsplash-min-scaled-272x161.jpg"
     },
     {
         "name": "Let's paint Van Gogh's Starry Night",
@@ -96,7 +96,7 @@
         "discount": null,
         "time": "6 hours",
         "label": null,
-        "img-name": ""
+        "imgName": "landscape-272x161.jpg"
     },
     {
         "name": "Nvidia and UE4 Technologies and Practice",
@@ -107,7 +107,7 @@
         "discount": null,
         "time": null,
         "label": "special",
-        "img-name": "12345-1-"
+        "imgName": "12345-1-272x161.png"
     },
     {
         "name": "How to Work with Legendary RED Camera?",
@@ -118,7 +118,7 @@
         "discount": null,
         "time": "4 hours",
         "label": "special",
-        "img-name": "jakob-owens-198234-unsplash-min-1-"
+        "imgName": "jakob-owens-198234-unsplash-min-1-272x161.png"
     },
     {
         "name": "MasterStudy Mobile LMS App",
@@ -129,6 +129,6 @@
         "discount": null,
         "time": "2 hours",
         "label": null,
-        "img-name": "promo-tf-"
+        "imgName": "promo_tf-272x161.jpg"
     }
 ]

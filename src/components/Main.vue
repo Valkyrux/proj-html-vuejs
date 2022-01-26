@@ -2,18 +2,21 @@
     <main>
         <Highlights :categoryList="categoryListFinder"/>
         <Jumbo />
+        <RecentCourses :categoryList="categoryListFinder" :coursesList="coursesList"/>
     </main>
 </template>
 
 <script>
 import Highlights from './main_components/Highlights.vue';
 import Jumbo from './main_components/Jumbo.vue';
+import RecentCourses from './main_components/RecentCourses.vue';
 
 export default {
   name: 'Main',
   components: {
     Highlights,
     Jumbo,
+    RecentCourses,
   },
   data() {
     return {

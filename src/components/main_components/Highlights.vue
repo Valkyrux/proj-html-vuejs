@@ -4,10 +4,10 @@
           <div class="col-7 d-flex align-items-center">
             <div>
                 <h1 class="ms_main-title">Start Investing in You</h1>
-                <p class="fs-5 pt-4 pb-4">With over 1200 courses in 18 subjects,
+                <p class="pt-4 pb-4 fw-light">With over 1200 courses in 18 subjects,
                     you're guaranteed to find something that's is right for you.</p>
                 <button class="text-uppercase rounded-pill
-                border-0 text-light ms_button-highlights fw-bold">join for free</button>
+                border-0 text-light ms_button-highlights">join for free</button>
             </div>
           </div>
           <div class="col-5">
@@ -15,7 +15,7 @@
           </div>
       </div>
       <div class="row">
-          <div class="col-4 ps-0">
+          <div class="col-4">
             <div class="card h-100 p-4 ms_card">
                 <div class="card-header">
                         <div class="ms_icon">
@@ -43,7 +43,7 @@
                 </div>
             </div>
           </div>
-          <div class="col-4 pe-0">
+          <div class="col-4">
             <div class="card h-100 p-4 ms_card">
                 <div class="card-header">
                         <div class="ms_icon">
@@ -105,7 +105,7 @@ export default {
     },
   },
   created() {
-    this.categoryShow = this.categoryList;
+    this.categoryShow = this.categoryList.map((element) => element);
     this.setAutoPlaySlider();
   },
 };
@@ -115,12 +115,15 @@ export default {
 @import "../../assets/scss/partials/_variables.scss";
 
 .container.ms_main-padding {
-    padding: 30px 100px;
+    padding: 30px 80px;
 }
 
 h1.ms_main-title {
     font-size: 4em;
     font-weight: 300;
+    & ~ p {
+        font-size: 1.8em;
+    }
 }
 
 .ms_button-highlights {
@@ -156,9 +159,10 @@ h1.ms_main-title {
 .ms_grid {
     display: grid;
     gap: 24px;
-    grid-template-columns: calc(100% / 3 - 12px) calc(100% / 3 - 24px) calc(100% / 3 - 12px);
+    grid-template-columns:
+        calc(100% / 3 - 48px / 3) calc(100% / 3 - 48px / 3) calc(100% / 3 - 48px / 3);
     grid-template-rows: 200px 200px 200px;
-    margin: 80px -12px;
+    margin: 80px 0;
 }
 
 .ms_grid-item {
