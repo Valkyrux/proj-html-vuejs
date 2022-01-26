@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid p-5">
-      <h2 class="text-center">Recent Courses</h2>
+      <h2 class="text-center ms_section-title">Recent Courses</h2>
       <nav class="nav justify-content-center ms_recent-nav mt-5 mb-5">
         <a href="#" class="nav-link rounded-pill pt-1 pb-1"
         :class="active=='All'?'ms_active':''" @click="setActiveAll($event)">All</a>
@@ -79,6 +79,7 @@ export default {
 
 <style lang="scss">
 @import "../../assets/scss/partials/_variables.scss";
+@import "../../assets/scss/partials/_commons.scss";
 
   .ms_recent-nav {
     & a {

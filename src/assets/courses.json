@@ -19,7 +19,8 @@
         "discount": "$45",
         "time": "6 hours",
         "label": "new",
-        "imgName": "cat_ar-272x161.jpg"
+        "imgName": "cat_ar-272x161.jpg",
+        "feature": true
     },
     {
         "name": "Basics of Masterstudy",

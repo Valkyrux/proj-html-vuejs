@@ -3,6 +3,7 @@
         <Highlights :categoryList="categoryListFinder"/>
         <Jumbo />
         <RecentCourses :categoryList="categoryListFinder" :coursesList="coursesList"/>
+        <WeAreProud />
     </main>
 </template>
 
@@ -10,6 +11,7 @@
 import Highlights from './main_components/Highlights.vue';
 import Jumbo from './main_components/Jumbo.vue';
 import RecentCourses from './main_components/RecentCourses.vue';
+import WeAreProud from './main_components/WeAreProud.vue';
 
 export default {
   name: 'Main',
@@ -17,6 +19,7 @@ export default {
     Highlights,
     Jumbo,
     RecentCourses,
+    WeAreProud,
   },
   data() {
     return {
