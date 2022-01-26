@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid ms_we-are-proud position-relative">
-    <div class="position-absolute w-100 ms_position">
+    <div class="position-absolute ms_position">
         <h2 class="ms_section-title text-center">We are Proud</h2>
         <p>Certificated courses are instructed by high educated and qualified
       istructors who hold doctoral and master's level degrees.</p>
@@ -51,6 +51,7 @@ export default {
     background-position: bottom;
     background-color: rgba($color: $athens-gray, $alpha: 0.5);
     & .ms_position {
+        width: calc(100% - 20px);
         top: 50px;
         & p {
             margin-top: 20px;

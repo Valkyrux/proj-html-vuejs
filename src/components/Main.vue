@@ -4,6 +4,9 @@
         <Jumbo />
         <RecentCourses :categoryList="categoryListFinder" :coursesList="coursesList"/>
         <WeAreProud />
+        <Subscribe />
+        <PopularCourses :allCourses="coursesList" />
+        <WorkWithUs />
     </main>
 </template>
 
@@ -12,6 +15,9 @@ import Highlights from './main_components/Highlights.vue';
 import Jumbo from './main_components/Jumbo.vue';
 import RecentCourses from './main_components/RecentCourses.vue';
 import WeAreProud from './main_components/WeAreProud.vue';
+import Subscribe from './main_components/Subscribe.vue';
+import PopularCourses from './main_components/PopularCourses.vue';
+import WorkWithUs from './main_components/WorkWithUs.vue';
 
 export default {
   name: 'Main',
@@ -20,6 +26,9 @@ export default {
     Jumbo,
     RecentCourses,
     WeAreProud,
+    Subscribe,
+    PopularCourses,
+    WorkWithUs,
   },
   data() {
     return {
