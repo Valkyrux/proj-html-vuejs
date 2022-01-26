@@ -8,7 +8,7 @@ import {
   faChevronDown, faBars, faSearch, faBullhorn, faBriefcase, faGlobeEurope, faDesktop,
 } from '@fortawesome/free-solid-svg-icons';
 import {
-  faUser, faBookmark, faCalendarCheck,
+  faUser, faBookmark, faCalendarCheck, faClock,
 } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
@@ -17,7 +17,7 @@ import App from './App.vue';
 library.add(faTwitter, faInstagram, faBehance, faDribbble,
   faFlickr, faGit, faLinkedin, faPinterest, faChevronDown,
   faBars, faSearch, faBullhorn, faBriefcase, faUser, faBookmark,
-  faGlobeEurope, faDesktop, faCalendarCheck);
+  faGlobeEurope, faDesktop, faCalendarCheck, faClock);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 

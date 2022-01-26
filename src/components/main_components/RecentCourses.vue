@@ -7,7 +7,7 @@
         class="nav-link">{{categoryElement.category}}</a>
       </nav>
       <div class="row">
-        <div class="col-2" v-for="course,index in showCourses"
+        <div class="col-2 mb-4" v-for="course,index in showCourses"
         :key="'course-' + index">
           <Card :courseObj="course"/>
         </div>
